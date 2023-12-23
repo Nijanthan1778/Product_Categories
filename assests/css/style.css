@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:wght@100;300;400;500;600;700");
+@import url("https://fonts.googleapis.com/css?family=Khula:wght@100;300;400;500;600;700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  width: 100%;
+  height: 100vh;
+}
+
+html {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: rgba(0, 0, 0, 1);
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  color: rgba(0, 0, 0, 1);
+}
+
+.container {
+  max-width: 1025px;
+  margin: auto auto;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+#title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  max-width: 31.25rem;
+  max-height: 2.5rem;
+  margin: 1rem auto 1rem auto;
+}
+
+.tabs button p {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 8.41rem;
+  height: 2.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs button img {
+  display: none;
+  width: 0.8rem;
+}
+
+.active_tab {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+}
+
+.tabs button:first-child img {
+  display: block;
+}
+
+.content_container {
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  display: none;
+}
+
+.content_container:first-child {
+  display: flex;
+}
+.content {
+  font-family: "Khula", sans-serif;
+}
+.content img {
+  width: 10.5rem;
+  height: 13.25rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.content img:hover {
+  z-index: 10;
+  scale: 1.2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product_name,
+.product_price {
+  display: flex;
+  align-items: center;
+}
+.product_price {
+  gap: 5px;
+  margin-bottom: 5px;
+}
+.product_name p:first-child {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.product_name p:nth-child(2) {
+  font-size: 1rem;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+.product_name p:last-child {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+.product_price p,
+.content button {
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.product_price p:nth-child(2) {
+  color: rgba(143, 143, 143, 1);
+  text-decoration: line-through;
+}
+.product_price p:nth-child(3) {
+  color: rgba(255, 55, 55, 1);
+}
+
+.content button {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  height: 1.6rem;
+  width: 10.5rem;
+  font-weight: 400;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.content_women,
+.content_kids {
+  display: none;
+}
